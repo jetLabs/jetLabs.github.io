@@ -4,21 +4,32 @@
 	<meta charset="UTF-8">
 	<title>jet.Labs | Web & Mobile Development</title>
 	<link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="js/jquery.vegas.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div id="wrapper">
 		<div id="content">
 			<img id="logo" src="img/JETLABS_text.png" alt="logo" height="200">
+			<p class="text">Web & Mobile Development</p>
+			<p class="text">Montevideo, Uruguay</p>
+			<br>
+			<p class="contact">(598) 95 608 126</p>
+			<p class="contact">(598) 99 552 624</p>
+
 		</div>
 	</div>
 
 	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/backstretch.js"></script>
+	<script src="js/jquery.vegas.js"></script>
 	<script>
-	  $.backstretch([
-	      "img/bg.jpg"
-	    ], {fade: 750});
+
+	  $.vegas('overlay');
+	  $.vegas({
+		  src:'../jetLabs.github.io/img/bg1.jpg'
+	  });
 
 	</script>
 </body>
